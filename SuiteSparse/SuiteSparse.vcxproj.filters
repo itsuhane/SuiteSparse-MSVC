@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\AMD">
+      <UniqueIdentifier>{b60f0af9-0e88-4603-8cb6-3a085760e8d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Config">
+      <UniqueIdentifier>{6f3eaf53-e602-4e8c-92be-38cc82967279}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BTF">
+      <UniqueIdentifier>{d70ef5ed-d621-40b7-b73e-51647a91d864}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CAMD">
+      <UniqueIdentifier>{463d438c-a212-4c00-8ca2-a1f3d89bf5a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CCOLAMD">
+      <UniqueIdentifier>{b18f3f4e-d9db-4b13-a3a3-b2033ce6c699}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CHOLMOD">
+      <UniqueIdentifier>{dc64f567-d3cf-47b1-af04-3403cd33a492}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\COLAMD">
+      <UniqueIdentifier>{b531dc9c-a5a6-4dc0-9bde-5f4aec66e1c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\KLU">
+      <UniqueIdentifier>{fcf2a5ca-4598-4e7b-8df0-5a72610f910c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LDL">
+      <UniqueIdentifier>{7c93419e-0270-4658-a35d-1b326f32828f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\SuiteSparse_config\SuiteSparse_config.c">
+      <Filter>Source Files\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="AMD\amd_i.c">
+      <Filter>Source Files\AMD</Filter>
+    </ClCompile>
+    <ClCompile Include="AMD\amd_l.c">
+      <Filter>Source Files\AMD</Filter>
+    </ClCompile>
+    <ClCompile Include="BTF\btf_l.c">
+      <Filter>Source Files\BTF</Filter>
+    </ClCompile>
+    <ClCompile Include="CAMD\camd_i.c">
+      <Filter>Source Files\CAMD</Filter>
+    </ClCompile>
+    <ClCompile Include="CAMD\camd_l.c">
+      <Filter>Source Files\CAMD</Filter>
+    </ClCompile>
+    <ClCompile Include="CCOLAMD\ccolamd_l.c">
+      <Filter>Source Files\CCOLAMD</Filter>
+    </ClCompile>
+    <ClCompile Include="KLU\klu_d.c">
+      <Filter>Source Files\KLU</Filter>
+    </ClCompile>
+    <ClCompile Include="KLU\klu_l.c">
+      <Filter>Source Files\KLU</Filter>
+    </ClCompile>
+    <ClCompile Include="KLU\klu_z.c">
+      <Filter>Source Files\KLU</Filter>
+    </ClCompile>
+    <ClCompile Include="KLU\klu_zl.c">
+      <Filter>Source Files\KLU</Filter>
+    </ClCompile>
+    <ClCompile Include="COLAMD\colamd_l.c">
+      <Filter>Source Files\COLAMD</Filter>
+    </ClCompile>
+    <ClCompile Include="LDL\ldl_l.c">
+      <Filter>Source Files\LDL</Filter>
+    </ClCompile>
+    <ClCompile Include="COLAMD\colamd_i.c">
+      <Filter>Source Files\COLAMD</Filter>
+    </ClCompile>
+    <ClCompile Include="BTF\btf_i.c">
+      <Filter>Source Files\BTF</Filter>
+    </ClCompile>
+    <ClCompile Include="CCOLAMD\ccolamd_i.c">
+      <Filter>Source Files\CCOLAMD</Filter>
+    </ClCompile>
+    <ClCompile Include="LDL\ldl_i.c">
+      <Filter>Source Files\LDL</Filter>
+    </ClCompile>
+    <ClCompile Include="CHOLMOD\cholmod_l.c">
+      <Filter>Source Files\CHOLMOD</Filter>
+    </ClCompile>
+    <ClCompile Include="CHOLMOD\cholmod_i.c">
+      <Filter>Source Files\CHOLMOD</Filter>
+    </ClCompile>
+    <ClCompile Include="CHOLMOD\cholmod_l_1.c">
+      <Filter>Source Files\CHOLMOD</Filter>
+    </ClCompile>
+    <ClCompile Include="CHOLMOD\cholmod_i_1.c">
+      <Filter>Source Files\CHOLMOD</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

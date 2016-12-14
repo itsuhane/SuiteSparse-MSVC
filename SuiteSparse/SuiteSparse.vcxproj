@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B1C4D50A-05C3-46B0-BF50-3C00C313DE45}</ProjectGuid>
+    <RootNamespace>SuiteSparse</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Config.props" />
+    <Import Project="metis-5.1.0.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;NDEBUG2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\SuiteSparse_config\SuiteSparse_config.c" />
+    <ClCompile Include="AMD\amd_i.c">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\AMD\Source;$(SolutionDir)..\AMD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="AMD\amd_l.c">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\AMD\Source;$(SolutionDir)..\AMD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="BTF\btf_i.c">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\BTF\Source;$(SolutionDir)..\BTF\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="BTF\btf_l.c">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\BTF\Source;$(SolutionDir)..\BTF\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="CAMD\camd_i.c">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\CAMD\Source;$(SolutionDir)..\CAMD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="CAMD\camd_l.c">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\CAMD\Source;$(SolutionDir)..\CAMD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="CCOLAMD\ccolamd_i.c">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\CCOLAMD\Source;$(SolutionDir)..\CCOLAMD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="CCOLAMD\ccolamd_l.c">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\CCOLAMD\Source;$(SolutionDir)..\CCOLAMD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="CHOLMOD\cholmod_i.c">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\CHOLMOD\Supernodal;$(SolutionDir)..\CHOLMOD\Partition;$(SolutionDir)..\CHOLMOD\Modify;$(SolutionDir)..\CHOLMOD\MatrixOps;$(SolutionDir)..\CHOLMOD\Cholesky;$(SolutionDir)..\CHOLMOD\Check;$(SolutionDir)..\CHOLMOD\Core;$(SolutionDir)..\CHOLMOD\Include;$(SolutionDir)..\CCOLAMD\Include;$(SolutionDir)..\COLAMD\Include;$(SolutionDir)..\CAMD\Include;$(SolutionDir)..\AMD\Include;$(SolutionDir)..\metis-5.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="CHOLMOD\cholmod_l.c">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\CHOLMOD\Supernodal;$(SolutionDir)..\CHOLMOD\Partition;$(SolutionDir)..\CHOLMOD\Modify;$(SolutionDir)..\CHOLMOD\MatrixOps;$(SolutionDir)..\CHOLMOD\Cholesky;$(SolutionDir)..\CHOLMOD\Check;$(SolutionDir)..\CHOLMOD\Core;$(SolutionDir)..\CHOLMOD\Include;$(SolutionDir)..\CCOLAMD\Include;$(SolutionDir)..\COLAMD\Include;$(SolutionDir)..\CAMD\Include;$(SolutionDir)..\AMD\Include;$(SolutionDir)..\metis-5.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="CHOLMOD\cholmod_i_1.c">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\CHOLMOD\Supernodal;$(SolutionDir)..\CHOLMOD\Partition;$(SolutionDir)..\CHOLMOD\Modify;$(SolutionDir)..\CHOLMOD\MatrixOps;$(SolutionDir)..\CHOLMOD\Cholesky;$(SolutionDir)..\CHOLMOD\Check;$(SolutionDir)..\CHOLMOD\Core;$(SolutionDir)..\CHOLMOD\Include;$(SolutionDir)..\CCOLAMD\Include;$(SolutionDir)..\COLAMD\Include;$(SolutionDir)..\CAMD\Include;$(SolutionDir)..\AMD\Include;$(SolutionDir)..\metis-5.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="CHOLMOD\cholmod_l_1.c">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\CHOLMOD\Supernodal;$(SolutionDir)..\CHOLMOD\Partition;$(SolutionDir)..\CHOLMOD\Modify;$(SolutionDir)..\CHOLMOD\MatrixOps;$(SolutionDir)..\CHOLMOD\Cholesky;$(SolutionDir)..\CHOLMOD\Check;$(SolutionDir)..\CHOLMOD\Core;$(SolutionDir)..\CHOLMOD\Include;$(SolutionDir)..\CCOLAMD\Include;$(SolutionDir)..\COLAMD\Include;$(SolutionDir)..\CAMD\Include;$(SolutionDir)..\AMD\Include;$(SolutionDir)..\metis-5.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="COLAMD\colamd_i.c">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\COLAMD\Source;$(SolutionDir)..\COLAMD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="COLAMD\colamd_l.c">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\COLAMD\Source;$(SolutionDir)..\COLAMD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="KLU\klu_d.c">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\KLU\Source;$(SolutionDir)..\KLU\Include;$(SolutionDir)..\COLAMD\Include;$(SolutionDir)..\BTF\Include;$(SolutionDir)..\AMD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="KLU\klu_l.c">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\KLU\Source;$(SolutionDir)..\KLU\Include;$(SolutionDir)..\COLAMD\Include;$(SolutionDir)..\BTF\Include;$(SolutionDir)..\AMD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="KLU\klu_z.c">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\KLU\Source;$(SolutionDir)..\KLU\Include;$(SolutionDir)..\COLAMD\Include;$(SolutionDir)..\BTF\Include;$(SolutionDir)..\AMD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="KLU\klu_zl.c">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\KLU\Source;$(SolutionDir)..\KLU\Include;$(SolutionDir)..\COLAMD\Include;$(SolutionDir)..\BTF\Include;$(SolutionDir)..\AMD\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="LDL\ldl_i.c">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\LDL\Source;$(SolutionDir)..\LDL\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="LDL\ldl_l.c">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\LDL\Source;$(SolutionDir)..\LDL\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

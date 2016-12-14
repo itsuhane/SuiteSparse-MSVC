@@ -1,0 +1,14 @@
+#define DLONG
+#include "camd_1.c"
+#include "camd_2.c"
+#include "camd_aat.c"
+#include "camd_control.c"
+#include "camd_defaults.c"
+#include "camd_dump.c"
+#include "camd_global.c"
+#include "camd_info.c"
+#include "camd_order.c"
+#include "camd_postorder.c"
+#include "camd_preprocess.c"
+#include "camd_valid.c"
+#undef DLONG

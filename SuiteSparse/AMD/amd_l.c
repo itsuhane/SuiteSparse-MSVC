@@ -1,0 +1,15 @@
+#define DLONG
+#include "amd_1.c"
+#include "amd_2.c"
+#include "amd_aat.c"
+#include "amd_control.c"
+#include "amd_defaults.c"
+#include "amd_dump.c"
+#include "amd_global.c"
+#include "amd_info.c"
+#include "amd_order.c"
+#include "amd_postorder.c"
+#include "amd_post_tree.c"
+#include "amd_preprocess.c"
+#include "amd_valid.c"
+#undef DLONG
