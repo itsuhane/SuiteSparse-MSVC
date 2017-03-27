@@ -40,6 +40,9 @@
     <Filter Include="Source Files\LDL">
       <UniqueIdentifier>{7c93419e-0270-4658-a35d-1b326f32828f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\SPQR">
+      <UniqueIdentifier>{59996df7-8346-4434-adb5-25365d4a58fe}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\SuiteSparse_config\SuiteSparse_config.c">
@@ -104,6 +107,126 @@
     </ClCompile>
     <ClCompile Include="CHOLMOD\cholmod_i_1.c">
       <Filter>Source Files\CHOLMOD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_1colamd.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_1factor.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_1fixed.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_analyze.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_append.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_assemble.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_cpack.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_csize.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_cumsum.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_debug.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_factorize.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_fcsize.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_freefac.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_freenum.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_freesym.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_front.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_fsize.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_happly.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_happly_work.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_hpinv.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_kernel.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_larftb.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_maxcolnorm.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_panel.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_parallel.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_rconvert.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_rcount.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_rhpack.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_rmap.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_rsolve.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_shift.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_stranspose1.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_stranspose2.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_tol.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_trapezoidal.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\spqr_type.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\SuiteSparseQR.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\SuiteSparseQR_C.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\SuiteSparseQR_expert.cpp">
+      <Filter>Source Files\SPQR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SPQR\Source\SuiteSparseQR_qmult.cpp">
+      <Filter>Source Files\SPQR</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
